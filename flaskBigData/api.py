@@ -5,7 +5,7 @@ app = Flask(__name__)
 CORS(app,resources={r"/*/*":{"origins":"*"},})
 @app.route('/consulta1/<string:year>/')
 def consulta1(year: str):
-  path="csvsprocesados/consulta1_hasta"+year+".csv"
+  path="csvsprocesados/consulta1_hasta"+year+"join.csv"
   print(path)
   data = pd.read_csv(path)
   data = data.to_dict('records')

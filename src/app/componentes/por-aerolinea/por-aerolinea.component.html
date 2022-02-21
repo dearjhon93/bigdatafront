@@ -17,15 +17,15 @@
         <table class="table table-bordered">
             <thead>
                 <tr>
-                    <th scope="row">Origen</th>
-                    <th scope="row">Destino</th>
-                    <th scope="row">Retrasos</th>
+                    <th scope="row">Retrasos Origen</th>
+                    <th scope="row">Retrasos Destino</th>
+                    <th scope="row">Aerolineas</th>
                 </tr>
             </thead>
             <tbody>
                 <tr *ngFor="let vuelo of vuelos | slice: (page-1) * pageSize : page * pageSize">
-                    <td scope="row">{{vuelo.Origin}}</td>
-                    <td scope="row">{{vuelo.Dest}}</td>
+                    <td scope="row">{{vuelo.rorg}}</td>
+                    <td scope="row">{{vuelo.rdes}}</td>
                     <td scope="row">{{vuelo.UniqueCarrier}}</td>
                 </tr>
             </tbody>
@@ -35,3 +35,4 @@
         Universidad de Cuenca
     </div>
 </div>
+

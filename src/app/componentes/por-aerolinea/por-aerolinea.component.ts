@@ -21,5 +21,6 @@ export class PorAerolineaComponent implements OnInit {
       console.log(respuesta);
       this.vuelos=respuesta;
     });
-  }
+  }  
+
 }
